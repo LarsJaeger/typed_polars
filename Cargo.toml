@@ -1,0 +1,15 @@
+[package]
+name = "typed_polars"
+version = "0.1.0"
+edition = "2021"
+authors = ["Lars Jaeger"]
+description = "A statically-typed wrapper around Polars for compile-time type safety"
+license = "MIT"
+repository = "https://github.com/larsjaeger/typed_polars"
+keywords = ["polars", "dataframe", "typed", "static-typing"]
+categories = ["data-structures", "science"]
+
+[dependencies]
+polars = { version = "0.44", features = ["lazy", "dtype-full", "parquet", "csv"] }
+
+[dev-dependencies]
